@@ -1,5 +1,14 @@
+/*
+Functionality:
+Has the ability to "mint" NFTs and store them
+You should "mint" at least three NFT's
+Has the ability to print the details of your NFTs to the console
+Has the ability to print the total supply of your NFT collection to the console
+*/
+
 const NFTs = []
 
+//contains NFT characteristics
 function mintNFT (_name, _eyeColor, _shirtType, _bling) {
     const NFT = {
         "name": _name,
@@ -11,6 +20,7 @@ function mintNFT (_name, _eyeColor, _shirtType, _bling) {
     console.log("Minted: " + _name);
 }
 
+//lists NTFs
 function listNFTs () {
     for(let i = 0; i <NFTs.length; i++){
         console.log("\nID: \t\t\t\t" + (i + 1));
@@ -21,6 +31,7 @@ function listNFTs () {
     }
 }
 
+//outputs total number of NFTs
 function getTotalSupply() {
     console.log("\n" + NFTs.length);
 }
