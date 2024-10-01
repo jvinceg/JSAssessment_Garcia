@@ -36,6 +36,7 @@ function getTotalSupply() {
     console.log("\n" + NFTs.length);
 }
 
+
 mintNFT ("Bogart", "Black", "T-shirt", "Plastic");
 mintNFT ("Bogarta", "White", "Dress", "Plastic");
 mintNFT ("Mondragon", "Gold", "Dress", "Golden Accesories");
