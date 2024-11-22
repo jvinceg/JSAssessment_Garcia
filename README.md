@@ -1,7 +1,7 @@
-MyToken
+MyToken:
 This Solidity program is a simple smart contract that demonstrates the basics of token creation and manipulation using the Solidity programming language. The purpose of this program is to serve as a starting point for those who are new to Solidity and want to understand how to create, mint, and burn tokens on the Ethereum blockchain.
 
-Description
+Description:
 This program is a smart contract written in Solidity, a language used for developing decentralized applications and smart contracts on the Ethereum blockchain. The contract creates a simple token named "Jolibee" with the abbreviation "Jb." It allows minting and burning of tokens through its functions. This contract can be a foundation for more complex projects involving token economics or decentralized applications in the future.
 
 Key Features:
