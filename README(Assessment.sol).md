@@ -1,7 +1,7 @@
-Assessment
+Assessment:
 The Assessment Solidity program is a smart contract designed to manage a simple account with deposit and withdrawal functionalities. It incorporates error-handling mechanisms such as require, assert, and revert to ensure secure and efficient transactions. Additionally, it uses custom errors and events to improve transparency and clarity for users interacting with the contract.
 
-Description
+Description:
 This program is a smart contract written in Solidity, developed to simulate a basic financial account. The contract enables deposits and withdrawals, restricts access to the owner, and tracks the balance. It is well-suited for understanding Solidity concepts like ownership, error handling, and state management.
 
 The contract includes:
