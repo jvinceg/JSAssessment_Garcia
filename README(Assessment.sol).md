@@ -47,6 +47,7 @@ Back in the first terminal, type npm run dev to launch the front-end.
 After this, the project will be running on your localhost. Typically at http://localhost:3000/
 
 Create a new Hardhat project.
+
 2. Create the Solidity File
 Save the contract code in a file named Assessment.sol.
 3. Deploy the Contract
