@@ -69,27 +69,37 @@ Executing the Program:
     
 Interaction:
 
-    Get Balance: Use the getBalance function to check the contract balance.
+    Get Balance: 
+        Copy code:
+        contract.balance();
     
-    Deposit: Call the deposit function with an amount:
+    Deposit: Call the deposit function with an amount
         Copy code:
         contract.deposit(50);  
     
-    Withdraw: Call the withdraw function with the desired withdrawal amount:
+    Withdraw: Call the withdraw function with the desired withdrawal amount
         Copy code:
         contract.withdraw(30); 
 
-    Add Item: Add a new item to the store:
+    Add Item: Add a new item to the store
         Copy code:
         contract.addItem("Helmet", 40);  
 
-    Redeem Item: Redeem an item by providing its itemId:
+    Redeem Item: 
         Copycode:
         contract.redeem(1);  
 
-    Get Item Details: Retrieve an item's details:
+    Get Item Details: 
         Copy code:
-        contract.getItem(0);  
+        contract.items(0);
+
+    Get the total summation of items: 
+        Copy code:
+        contract.itemCount();
+
+    Get the address of the owner:
+        Copy code:
+        contract,owner();
 
 
 Constructors: Initializes the contract
@@ -100,8 +110,6 @@ Constructors: Initializes the contract
         owner: Address deploying the contract.
         balance: Specified initial balance.
         Adds default items ("Sword," "Shield," "Potion").
-        
-    getBalance: Returns the current balance of the contract.
     
     deposit: Allows the owner to deposit funds.
         Parameters:
@@ -127,12 +135,6 @@ Constructors: Initializes the contract
             InsufficientBalance is triggered if the balance is insufficient.
         Emits: Redeem event.
         
-    getItem: Retrieves an item's details.
-        Parameters:
-            itemId (uint256): ID of the item.
-        Returns:
-            name (string): Name of the item.
-            price (uint256): Price of the item.
 Code/s:
 
     // SPDX-License-Identifier: UNLICENSED
@@ -164,10 +166,6 @@ Code/s:
             addItem("Sword", 50);
             addItem("Shield", 30);
             addItem("Potion", 10);
-        }
-    
-        function getBalance() public view returns (uint256) {
-            return balance;
         }
     
         function deposit(uint256 _amount) public payable {
@@ -221,12 +219,6 @@ Code/s:
             balance -= item.price;
     
             emit Redeem(msg.sender, item.name, item.price);
-        }
-    
-        function getItem(uint256 itemId) public view returns (string memory name, uint256 price) {
-            require(itemId < itemCount, "Item does not exist");
-            Item memory item = items[itemId];
-            return (item.name, item.price);
         }
     }
     
