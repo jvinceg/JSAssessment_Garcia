@@ -33,7 +33,7 @@ Copy code
 npx hardhat run --network localhost scripts/deploy.js  
 Launch the frontend:
 
-bash
+
 Copy code
 npm run dev  
 The application will run at http://localhost:3000.
