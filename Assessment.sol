@@ -29,10 +29,6 @@ contract Assessment {
         addItem("Potion", 10);
     }
 
-    function getBalance() public view returns (uint256) {
-        return balance;
-    }
-
     function deposit(uint256 _amount) public payable {
         uint256 _previousBalance = balance;
 
@@ -84,11 +80,5 @@ contract Assessment {
         balance -= item.price;
 
         emit Redeem(msg.sender, item.name, item.price);
-    }
-
-    function getItem(uint256 itemId) public view returns (string memory name, uint256 price) {
-        require(itemId < itemCount, "Item does not exist");
-        Item memory item = items[itemId];
-        return (item.name, item.price);
     }
 }
