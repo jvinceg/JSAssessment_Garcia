@@ -8,7 +8,7 @@ Videos/Links related to the project:
         https://www.loom.com/share/b975d3d325b64d1c827dd0befd9c05fc?sid=d66e52d4-052d-4503-89ec-ecf842c7a109
         
     Actual demonstration from a Remix virtual machine:
-        
+        https://www.loom.com/share/c5f1ec84f7994c04ab18d9225ba0d355?sid=3ef12477-497e-4ddf-8a02-2097b0944b85
 
 Description:
 
@@ -91,7 +91,12 @@ Interaction:
 
     Get Item Details: 
         Copy code:
-        contract.items(0);
+        contract.items(1);
+
+                OR
+
+        Copy code:
+        contract.getItems(1)
 
     Get the total summation of items: 
         Copy code:
@@ -220,6 +225,12 @@ Code/s:
     
             emit Redeem(msg.sender, item.name, item.price);
         }
+
+        function getItem(uint256 itemId) public view returns (string memory name, uint256 price) {
+        require(itemId < itemCount, "Item does not exist");
+        Item memory item = items[itemId];
+        return (item.name, item.price);
+    }
     }
     
 Authors:
