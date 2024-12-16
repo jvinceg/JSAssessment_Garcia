@@ -1,4 +1,5 @@
 Simple Overview
+
     The Assessment smart contract provides basic financial account management functionalities, such as deposits, withdrawals, and            balance tracking. It emphasizes secure transactions through ownership verification, error handling, and event logging, making it a       great learning resource for Solidity development.
 
 Videos/Links related to the project:
@@ -9,7 +10,8 @@ Videos/Links related to the project:
     Actual Demonstration:
         
 
-Description
+Description:
+
     The Assessment contract is a Solidity-based program designed to simulate a basic financial account with controlled access for            deposits and withdrawals. Only the owner (creator of the contract) can interact with the financial functionalities, ensuring secure      access. The contract also introduces custom errors and logging through events, providing transparency and clarity for all operations.
 
 Key Features:
@@ -111,5 +113,6 @@ Constructors: Initializes the contract
         Emits: Withdraw event.
 
 Authors:
-John Vincent G. Garcia
-202010607 BSCSSE
+    
+    John Vincent G. Garcia
+    202010607 BSCSSE
