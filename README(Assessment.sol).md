@@ -3,7 +3,7 @@ Simple Overview
 
 Videos/Links related to the project:
 
-    Explains why the frontend portion of the project won't work (for me in particular) and still shows how the frontend should have          worked if it did: 
+    Explains why the frontend portion of the project won't work (for me in particular) and still shows how the frontend should have   worked if it did: 
         https://www.loom.com/share/b975d3d325b64d1c827dd0befd9c05fc?sid=d66e52d4-052d-4503-89ec-ecf842c7a109
         
     Actual Demonstration:
